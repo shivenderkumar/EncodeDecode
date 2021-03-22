@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:scrollbars="vertical"
+    app:cardCornerRadius="20dp"
+    android:background="@color/white"
+    app:layout_constraintTop_toBottomOf="@+id/linear_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_location_on_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline_vertical_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <TextView
+            android:id="@+id/tv_restaurant_name_2"
+            android:text="Koko Seafood Salad &amp; Grill sdvsdfsfdsdfsfssfsvsfvsfvsfvsfvsfvsf"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/guideline_vertical_1"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_restaurant_location"
+            android:text="92 Nagle Ave,New York,NY,10040"
+            android:textAllCaps="false"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/guideline_vertical_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_restaurant_name_2"
+            app:layout_constraintBottom_toTopOf="@id/tv_restaurant_contact"/>
+
+
+        <ImageView
+            android:id="@+id/iv_mobile_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_mobile_phone_portrait_24"
+            app:layout_constraintLeft_toRightOf="@id/guideline_vertical_1"
+            app:layout_constraintRight_toLeftOf="@id/tv_restaurant_contact"
+            app:layout_constraintTop_toTopOf="@id/tv_restaurant_contact"
+            app:layout_constraintBottom_toBottomOf="@id/tv_restaurant_contact"/>
+
+        <TextView
+            android:id="@+id/tv_restaurant_contact"
+            android:text="917-265-8878"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/iv_mobile_icon"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
